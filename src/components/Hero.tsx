@@ -18,54 +18,28 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Content */}
-        <div className="space-y-8 animate-fade-in-left">
+        <div className="space-y-6 animate-fade-in-left">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              Я <span className="text-gradient-turquoise">Анжела</span>
+              <span className="text-gradient-turquoise">Анжела</span>
               <br />
               <span className="text-gradient-gold">Крицкая</span>
             </h1>
-            <div className="text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed">
-              <p className="mb-2">Бухгалтер, инвестор, исследователь нейросетей.</p>
-              <p className="text-turquoise font-medium">
-                Учусь новому, чтобы жить свободно и достойно.
-              </p>
-            </div>
+            <p className="text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed">
+              Бухгалтер, инвестор, исследователь нейросетей
+            </p>
           </div>
 
-          {/* Quick contact buttons */}
-          <div className="flex flex-wrap gap-4">
-            <Button 
-              variant="default" 
-              size="lg"
-              className="bg-turquoise hover:bg-turquoise-dark text-white shadow-turquoise hover-lift"
-              onClick={() => scrollToSection('contacts')}
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Связаться
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-gold text-gold hover:bg-gold hover:text-gold-foreground hover-lift"
-              onClick={() => scrollToSection('about')}
-            >
-              Узнать больше
-            </Button>
-          </div>
-
-          {/* Social proof tags */}
-          <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/30">
-              15+ лет в бухгалтерии
-            </span>
-            <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/30">
-              Криптоинвестор
-            </span>
-            <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/30">
-              Изучаю ИИ
-            </span>
-          </div>
+          {/* Quick contact button */}
+          <Button 
+            variant="default" 
+            size="lg"
+            className="bg-turquoise hover:bg-turquoise-dark text-white shadow-turquoise hover-lift"
+            onClick={() => scrollToSection('contacts')}
+          >
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Связаться
+          </Button>
         </div>
 
         {/* Photo */}

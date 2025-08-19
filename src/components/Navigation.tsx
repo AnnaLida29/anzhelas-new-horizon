@@ -29,7 +29,6 @@ const Navigation = () => {
   const navItems = [
     { label: 'Главная', action: scrollToTop },
     { label: 'Обо мне', action: () => scrollToSection('about') },
-    { label: 'Интересы', action: () => scrollToSection('interests') },
     { label: 'Планы', action: () => scrollToSection('plans') },
     { label: 'Контакты', action: () => scrollToSection('contacts') },
   ];

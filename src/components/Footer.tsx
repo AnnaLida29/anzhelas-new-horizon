@@ -44,7 +44,6 @@ const Footer = () => {
             <div className="space-y-2">
               {[
                 { label: 'Обо мне', id: 'about' },
-                { label: 'Интересы', id: 'interests' },
                 { label: 'Планы', id: 'plans' },
                 { label: 'Контакты', id: 'contacts' }
               ].map((link, index) => (
