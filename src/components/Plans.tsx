@@ -174,7 +174,7 @@ const Plans = () => {
             <Card className="max-w-4xl mx-auto border-0 shadow-elegant bg-gradient-to-r from-turquoise/10 to-gold/10">
               <CardContent className="p-8">
                 <blockquote className="text-2xl font-light italic text-primary leading-relaxed mb-4">
-                  "Возраст — это не препятствие для изучения нового. В 50+ я открываю для себя мир технологий и планирую будущее, 
+                  "Никогда не поздно изучать новое. Я открываю для себя мир технологий и планирую будущее, 
                   которое даст мне свободу и возможность жить так, как я хочу."
                 </blockquote>
                 <div className="text-muted-foreground font-medium">— Моя философия развития</div>
