@@ -22,7 +22,7 @@ const About = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                Инвестирую в <span className="text-gold font-semibold">криптовалюту</span>, особенно верю в будущее Bitcoin. 
+                Инвестирую в <span className="text-gold font-semibold">криптовалюту</span>, верю в будущее Bitcoin. 
                 Стремлюсь найти новые источники заработка для достижения финансовой свободы.
               </p>
               
