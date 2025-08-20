@@ -3,11 +3,11 @@ import { Calculator, Brain, TrendingUp, Book, Music, Plane } from "lucide-react"
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               Обо <span className="text-gradient-turquoise">мне</span>
             </h2>

@@ -1,11 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, GraduationCap, Plane } from "lucide-react";
 const Plans = () => {
-  return <section id="plans" className="section-padding bg-gradient-elegant">
+  return <section id="plans" className="py-16 bg-gradient-elegant">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               Мои <span className="text-gradient-gold">планы</span>
             </h2>

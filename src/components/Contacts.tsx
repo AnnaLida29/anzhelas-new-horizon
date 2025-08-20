@@ -40,11 +40,11 @@ const Contacts = () => {
     title: "Ответ",
     info: "Обычно отвечаю в течение 2-4 часов"
   }];
-  return <section id="contacts" className="section-padding bg-gradient-hero">
+  return <section id="contacts" className="py-16 bg-gradient-hero">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-12 animate-fade-in">
+          <div className="text-center mb-8 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-gradient-turquoise">Контакты</span>
             </h2>
@@ -54,7 +54,7 @@ const Contacts = () => {
           </div>
 
           {/* Contact methods */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {contactMethods.map((method, index) => <Card key={index} className="hover-lift border-0 shadow-elegant bg-white/90 backdrop-blur-sm animate-scale-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
