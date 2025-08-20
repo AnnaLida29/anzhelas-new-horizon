@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, GraduationCap, Plane } from "lucide-react";
-
 const Plans = () => {
-  return (
-    <section id="plans" className="section-padding bg-gradient-elegant">
+  return <section id="plans" className="section-padding bg-gradient-elegant">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
@@ -19,11 +17,7 @@ const Plans = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-turquoise/20 rounded-2xl transform -rotate-2 scale-105" />
                 <div className="relative bg-white rounded-2xl p-2 shadow-elegant">
-                  <img
-                    src="/lovable-uploads/b12681d8-3e16-4591-8b05-dd3c6cfa9d68.png"
-                    alt="Анжела Крицкая за работой"
-                    className="w-full h-auto rounded-xl object-cover"
-                  />
+                  <img src="/lovable-uploads/b12681d8-3e16-4591-8b05-dd3c6cfa9d68.png" alt="Анжела Крицкая за работой" className="w-full h-auto rounded-xl object-cover" />
                 </div>
               </div>
             </div>
@@ -69,7 +63,8 @@ const Plans = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Освоить AI-инструменты</span>
-                      <span className="text-xs text-turquoise font-medium">2024</span>
+                      <span className="text-xs text-turquoise font-medium">2025
+                    </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Создать первые AI-проекты</span>
@@ -86,8 +81,6 @@ const Plans = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Plans;
