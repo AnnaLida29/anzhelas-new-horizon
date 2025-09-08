@@ -1,15 +1,14 @@
 import { Heart, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-primary text-primary-foreground py-12 relative">
+  return <footer className="bg-primary text-primary-foreground py-12 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-4 left-10 w-24 h-24 bg-turquoise rounded-full" />
@@ -42,22 +41,23 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-turquoise-light">Быстрая навигация</h4>
             <div className="space-y-2">
-              {[
-                { label: 'Обо мне', id: 'about' },
-                { label: 'Планы', id: 'plans' },
-                { label: 'Контакты', id: 'contacts' }
-              ].map((link, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    const element = document.getElementById(link.id);
-                    element?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="block text-gray-300 hover:text-turquoise-light transition-colors text-sm"
-                >
+              {[{
+              label: 'Обо мне',
+              id: 'about'
+            }, {
+              label: 'Планы',
+              id: 'plans'
+            }, {
+              label: 'Контакты',
+              id: 'contacts'
+            }].map((link, index) => <button key={index} onClick={() => {
+              const element = document.getElementById(link.id);
+              element?.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }} className="block text-gray-300 hover:text-turquoise-light transition-colors text-sm">
                   {link.label}
-                </button>
-              ))}
+                </button>)}
             </div>
           </div>
 
@@ -66,17 +66,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-yellow-300">Связаться со мной</h4>
             <div className="space-y-2 text-sm">
               <p className="text-gray-300">Предпочитаю Telegram для быстрого общения</p>
-              <p className="text-gray-300">Email для деловых предложений</p>
+              <p className="text-gray-300">Whatsapp для деловых предложений</p>
               <p className="text-gray-300">Обычно отвечаю в течение 2-4 часов</p>
             </div>
             
             {/* Back to top button */}
-            <Button
-              onClick={scrollToTop}
-              variant="outline"
-              size="sm"
-              className="mt-6 border-turquoise-light text-turquoise-light hover:bg-turquoise-light hover:text-primary"
-            >
+            <Button onClick={scrollToTop} variant="outline" size="sm" className="mt-6 border-turquoise-light text-turquoise-light hover:bg-turquoise-light hover:text-primary">
               <ArrowUp className="h-4 w-4 mr-2" />
               Наверх
             </Button>
@@ -98,8 +93,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
