@@ -14,7 +14,7 @@ const Contacts = () => {
     title: "WhatsApp",
     description: "Для голосовых сообщений",
     action: "Открыть WhatsApp",
-    href: "https://wa.me/375292226489",
+    href: "https://api.whatsapp.com/send/?phone=375292226489",
     buttonClass: "bg-green-500 hover:bg-green-600"
   }, {
     icon: Instagram,
