@@ -26,7 +26,7 @@ const Hero = () => {
               <span className="text-gradient-gold">Крицкая</span>
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed">
-              Бухгалтер, инвестор, исследователь нейросетей
+              Копирайтер, бухгалтер, инвестор, исследователь нейросетей
             </p>
           </div>
 
