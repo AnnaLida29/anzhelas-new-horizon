@@ -70,22 +70,6 @@ const Contacts = () => {
               </Card>)}
           </div>
 
-          {/* Call to action */}
-          <div className="text-center animate-fade-in">
-            <Card className="border-0 shadow-elegant bg-gradient-to-r from-turquoise/20 to-gold/20 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">
-                  Давайте <span className="text-gradient-gold">сотрудничать!</span>
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl mx-auto">Открыта для обсуждения инвестиций и изучения ИИ-решений</p>
-                
-                <Button size="lg" className="bg-turquoise hover:bg-turquoise-dark text-white shadow-turquoise hover-lift" onClick={() => window.open('https://t.me/angel_krytskaya', '_blank')}>
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Написать сейчас
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>;
