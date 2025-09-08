@@ -1,31 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, Phone, Send, MapPin, Clock } from "lucide-react";
+import { MessageCircle, Phone, Send, MapPin, Clock, Instagram } from "lucide-react";
 const Contacts = () => {
   const contactMethods = [{
     icon: MessageCircle,
     title: "Telegram",
     description: "Предпочтительный способ связи",
     action: "Написать в Telegram",
-    href: "https://t.me/your_telegram",
-    // Replace with actual telegram
+    href: "https://t.me/angel_krytskaya",
     buttonClass: "bg-blue-500 hover:bg-blue-600"
   }, {
     icon: Phone,
     title: "WhatsApp",
     description: "Для голосовых сообщений",
     action: "Открыть WhatsApp",
-    href: "https://wa.me/your_number",
-    // Replace with actual WhatsApp
+    href: "https://wa.me/375292226489",
     buttonClass: "bg-green-500 hover:bg-green-600"
   }, {
-    icon: Mail,
-    title: "Email",
-    description: "Для деловой переписки",
-    action: "Написать email",
-    href: "mailto:angela.kritskaya@example.com",
-    // Replace with actual email
-    buttonClass: "bg-purple-500 hover:bg-purple-600"
+    icon: Instagram,
+    title: "Instagram",
+    description: "Подписывайтесь на обновления",
+    action: "Открыть Instagram",
+    href: "https://www.instagram.com/angel_krytskaya/",
+    buttonClass: "bg-pink-500 hover:bg-pink-600"
   }];
   const availabilityInfo = [{
     icon: Clock,
@@ -82,7 +79,7 @@ const Contacts = () => {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl mx-auto">Открыта для обсуждения инвестиций и изучения ИИ-решений</p>
                 
-                <Button size="lg" className="bg-turquoise hover:bg-turquoise-dark text-white shadow-turquoise hover-lift" onClick={() => window.open('https://t.me/your_telegram', '_blank')}>
+                <Button size="lg" className="bg-turquoise hover:bg-turquoise-dark text-white shadow-turquoise hover-lift" onClick={() => window.open('https://t.me/angel_krytskaya', '_blank')}>
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Написать сейчас
                 </Button>
