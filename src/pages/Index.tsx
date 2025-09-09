@@ -6,6 +6,7 @@ import Pricing from "@/components/Pricing";
 import Plans from "@/components/Plans";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <Contacts />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 };
