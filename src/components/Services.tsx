@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Search, MessageSquare, Target } from "lucide-react";
+import { PenTool, TrendingUp, Sparkles, Zap } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: FileText,
+      icon: PenTool,
       title: "Тексты для лендингов",
       subtitle: "(длинных сайтов на одну страницу)",
       description: [
@@ -13,7 +13,7 @@ const Services = () => {
       ]
     },
     {
-      icon: Search,
+      icon: TrendingUp,
       title: "SEO-оптимизированные статьи",
       description: [
         "Делаю статьи интересными и полезными для читателей.",
@@ -21,7 +21,7 @@ const Services = () => {
       ]
     },
     {
-      icon: MessageSquare,
+      icon: Sparkles,
       title: "Посты и сценарии для соцсетей",
       description: [
         "Создаю вовлекающий контент, который получают лайки, репосты и комментарии.",
@@ -29,7 +29,7 @@ const Services = () => {
       ]
     },
     {
-      icon: Target,
+      icon: Zap,
       title: "Коммерческие предложения",
       description: [
         "Создаю предложения, которые убеждают и закрывают сделки.",
@@ -67,8 +67,30 @@ const Services = () => {
               >
                 <CardHeader className="text-center pb-4">
                   <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-turquoise to-turquoise-dark rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent className="h-8 w-8 text-white" />
+                    <div className={`relative w-20 h-20 rounded-3xl flex items-center justify-center transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-6 ${
+                      index === 0 ? 'bg-gradient-to-br from-turquoise via-turquoise-dark to-gold animate-pulse' :
+                      index === 1 ? 'bg-gradient-to-br from-gold via-turquoise to-turquoise-dark' :
+                      index === 2 ? 'bg-gradient-to-br from-turquoise-dark via-gold to-turquoise' :
+                      'bg-gradient-to-br from-gold via-turquoise-dark to-turquoise animate-pulse'
+                    }`}
+                    style={{ 
+                      animationDelay: `${index * 0.2}s`,
+                      boxShadow: 'inset 0 2px 10px rgba(255,255,255,0.2), 0 5px 20px rgba(0,0,0,0.1)'
+                    }}>
+                      {/* Glow effect */}
+                      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      
+                      {/* Icon with multiple animations */}
+                      <IconComponent className={`h-10 w-10 text-white relative z-10 transition-all duration-300 ${
+                        index === 0 ? 'group-hover:animate-bounce' :
+                        index === 1 ? 'group-hover:scale-125' :
+                        index === 2 ? 'group-hover:animate-spin' :
+                        'group-hover:animate-pulse'
+                      }`} />
+                      
+                      {/* Floating particles effect */}
+                      <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-all duration-300" />
+                      <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-turquoise rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-all duration-300" style={{ animationDelay: '0.2s' }} />
                     </div>
                   </div>
                   <CardTitle className="text-xl font-bold text-foreground">
