@@ -93,15 +93,15 @@ const ChatWidget = () => {
     <div className="fixed bottom-6 right-6 z-50">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-80 h-96 bg-background border border-border rounded-lg shadow-elegant flex flex-col overflow-hidden">
+        <div className="mb-4 w-96 h-[500px] bg-background border border-border rounded-lg shadow-elegant flex flex-col overflow-hidden">
           {/* Header */}
-          <div className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
+          <div className="bg-gradient-turquoise text-white p-4 flex justify-between items-center">
             <h3 className="font-semibold">Задайте вопрос</h3>
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleChat}
-              className="text-primary-foreground hover:bg-primary/80 h-6 w-6"
+              className="text-white hover:bg-white/20 h-6 w-6"
             >
               <X size={16} />
             </Button>
@@ -119,7 +119,7 @@ const ChatWidget = () => {
                     <div
                       className={`max-w-[70%] p-3 rounded-lg text-sm ${
                         message.sender === 'user'
-                          ? 'bg-primary text-primary-foreground ml-auto'
+                          ? 'bg-gradient-turquoise text-white ml-auto'
                           : 'bg-muted text-muted-foreground'
                       }`}
                     >
@@ -171,10 +171,10 @@ const ChatWidget = () => {
       {/* Floating Button */}
       <Button
         onClick={toggleChat}
-        className="w-14 h-14 rounded-full shadow-elegant hover:shadow-lg transition-all duration-300 hover:scale-105"
+        className="w-16 h-16 rounded-full bg-gradient-turquoise text-white shadow-elegant hover:shadow-lg transition-all duration-300 hover:scale-105"
         size="icon"
       >
-        <MessageCircle size={24} />
+        <MessageCircle size={28} />
       </Button>
     </div>
   );
