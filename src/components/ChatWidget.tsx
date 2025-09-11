@@ -12,7 +12,7 @@ interface Message {
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { sender: 'bot', text: 'Здравствуйте! Я ваш ИИ-ассистент. Чем могу помочь?' }
+    { sender: 'bot', text: 'Я - ИИ консультант Анжелы Крицкой. Чем могу помочь?' }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
