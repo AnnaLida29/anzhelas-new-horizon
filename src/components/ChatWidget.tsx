@@ -171,7 +171,7 @@ const ChatWidget = () => {
       {/* ИИ Агент Button */}
       <Button
         onClick={toggleChat}
-        className="w-24 h-24 rounded-full bg-gradient-to-br from-turquoise to-gold text-white font-bold text-sm tracking-wider shadow-elegant hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex flex-col items-center justify-center"
+        className="w-32 h-32 rounded-full bg-gradient-to-br from-turquoise to-gold text-white font-bold text-base tracking-wider shadow-elegant hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex flex-col items-center justify-center"
       >
         <span>ИИ</span>
         <span>АГЕНТ</span>
