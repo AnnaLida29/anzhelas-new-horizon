@@ -50,7 +50,7 @@ const Navigation = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold text-primary hover:text-turquoise transition-colors"
             >
-              <span className="text-gradient-turquoise">А</span>нжела <span className="text-gradient-gold">К</span>рицкая
+              <span className="text-gradient-turquoise">Нейросайт</span> | <span className="text-gradient-turquoise">А</span>нжела <span className="text-gradient-gold">К</span>рицкая
             </button>
 
             {/* Desktop Navigation */}

@@ -168,13 +168,12 @@ const ChatWidget = () => {
         </div>
       )}
 
-      {/* Floating Button */}
+      {/* ИИ Агент Button */}
       <Button
         onClick={toggleChat}
-        className="w-16 h-16 rounded-full bg-gradient-turquoise text-white shadow-elegant hover:shadow-lg transition-all duration-300 hover:scale-105"
-        size="icon"
+        className="px-4 py-2 h-10 bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold text-sm tracking-wider hover:from-orange-600 hover:to-red-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 rounded-md"
       >
-        <MessageCircle size={28} />
+        ИИ АГЕНТ
       </Button>
     </div>
   );
