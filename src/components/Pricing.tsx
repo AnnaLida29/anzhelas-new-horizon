@@ -59,14 +59,14 @@ const Pricing = () => {
                       </h3>
                     </div>
                     <div className="flex flex-row items-center gap-3 sm:gap-6 shrink-0">
-                      <div className="flex items-center gap-2 text-lg font-bold">
-                        <div className="w-8 h-8 bg-gradient-to-br from-turquoise to-turquoise-dark rounded-lg flex items-center justify-center">
+                      <div className="flex items-center gap-2 text-lg font-bold w-32">
+                        <div className="w-8 h-8 bg-gradient-to-br from-turquoise to-turquoise-dark rounded-lg flex items-center justify-center shrink-0">
                           <Banknote className="h-4 w-4 text-white" />
                         </div>
                         <span className="text-foreground">{item.rublePrice}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-lg font-bold">
-                        <div className="w-8 h-8 bg-gradient-to-br from-gold to-yellow-600 rounded-lg flex items-center justify-center">
+                      <div className="flex items-center gap-2 text-lg font-bold w-28">
+                        <div className="w-8 h-8 bg-gradient-to-br from-gold to-yellow-600 rounded-lg flex items-center justify-center shrink-0">
                           <span className="text-gold-foreground text-xs font-bold">BYN</span>
                         </div>
                         <span className="text-foreground">{item.bynPrice}</span>
