@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Banknote } from "lucide-react";
 
 const Pricing = () => {
@@ -39,51 +38,34 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="border-0 bg-white/90 backdrop-blur-sm shadow-elegant">
-            <CardHeader className="text-center border-b border-border/50">
-              <CardTitle className="text-2xl font-bold text-foreground">
-                Стоимость услуг
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-8">
-              <div className="space-y-6">
-                {pricingItems.map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex flex-row items-center justify-between p-4 rounded-xl bg-gradient-to-r from-background to-secondary/30 hover:from-turquoise-light/10 hover:to-gold/10 transition-all duration-300 hover-lift"
-                  >
-                    <div className="flex-1 mr-4">
-                      <h3 className="text-base font-semibold text-foreground">
-                        {item.service}
-                      </h3>
-                    </div>
-                    <div className="flex flex-row items-center gap-3 sm:gap-6 shrink-0">
-                      <div className="flex items-center gap-2 text-lg font-bold w-32">
-                        <div className="w-8 h-8 bg-gradient-to-br from-turquoise to-turquoise-dark rounded-lg flex items-center justify-center shrink-0">
-                          <Banknote className="h-4 w-4 text-white" />
-                        </div>
-                        <span className="text-foreground">{item.rublePrice}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-lg font-bold w-28">
-                        <div className="w-8 h-8 bg-gradient-to-br from-gold to-yellow-600 rounded-lg flex items-center justify-center shrink-0">
-                          <span className="text-gold-foreground text-xs font-bold">BYN</span>
-                        </div>
-                        <span className="text-foreground">{item.bynPrice}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+        <div className="max-w-3xl mx-auto space-y-4">
+          {pricingItems.map((item, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-white/90 shadow-elegant hover-lift transition-all duration-300 overflow-hidden"
+            >
+              <div className="flex items-center">
+                {/* Service name */}
+                <div className="flex-1 px-6 py-5">
+                  <h3 className="text-base font-semibold text-foreground">{item.service}</h3>
+                </div>
+                {/* Ruble price */}
+                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-turquoise/10 to-turquoise/5 border-l border-border/30 min-w-[110px]">
+                  <Banknote className="h-4 w-4 text-turquoise mb-1" />
+                  <span className="text-base font-bold text-foreground whitespace-nowrap">{item.rublePrice}</span>
+                </div>
+                {/* BYN price */}
+                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-gold/10 to-gold/5 border-l border-border/30 min-w-[100px]">
+                  <span className="text-xs font-bold text-gold mb-1">BYN</span>
+                  <span className="text-base font-bold text-foreground whitespace-nowrap">{item.bynPrice}</span>
+                </div>
               </div>
-              
-              <div className="mt-8 p-4 bg-gradient-to-r from-turquoise/10 to-gold/10 rounded-xl border border-turquoise/20">
-                <p className="text-center text-muted-foreground">
-                  💡 Итоговая стоимость зависит от сложности задачи и объема работы. 
-                  Свяжитесь со мной для точного расчета!
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          ))}
+
+          <p className="text-center text-sm text-muted-foreground pt-2">
+            💡 Итоговая стоимость зависит от сложности задачи. Свяжитесь для точного расчёта.
+          </p>
         </div>
       </div>
     </section>
