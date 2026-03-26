@@ -50,12 +50,12 @@ const Pricing = () => {
                   <h3 className="text-base font-semibold text-foreground">{item.service}</h3>
                 </div>
                 {/* Ruble price */}
-                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-turquoise/10 to-turquoise/5 border-l border-border/30 min-w-[110px]">
+                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-turquoise/10 to-turquoise/5 border-l border-border/30 w-[120px] shrink-0">
                   <Banknote className="h-4 w-4 text-turquoise mb-1" />
                   <span className="text-base font-bold text-foreground whitespace-nowrap">{item.rublePrice}</span>
                 </div>
                 {/* BYN price */}
-                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-gold/10 to-gold/5 border-l border-border/30 min-w-[100px]">
+                <div className="flex flex-col items-center justify-center px-6 py-5 bg-gradient-to-b from-gold/10 to-gold/5 border-l border-border/30 w-[100px] shrink-0">
                   <span className="text-xs font-bold text-gold mb-1">BYN</span>
                   <span className="text-base font-bold text-foreground whitespace-nowrap">{item.bynPrice}</span>
                 </div>
