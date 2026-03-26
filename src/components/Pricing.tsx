@@ -51,14 +51,14 @@ const Pricing = () => {
                 {pricingItems.map((item, index) => (
                   <div 
                     key={index}
-                    className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 rounded-xl bg-gradient-to-r from-background to-secondary/30 hover:from-turquoise-light/10 hover:to-gold/10 transition-all duration-300 hover-lift"
+                    className="flex flex-row items-center justify-between p-4 rounded-xl bg-gradient-to-r from-background to-secondary/30 hover:from-turquoise-light/10 hover:to-gold/10 transition-all duration-300 hover-lift"
                   >
-                    <div className="flex-1 mb-3 sm:mb-0">
-                      <h3 className="text-lg font-semibold text-foreground mb-1">
+                    <div className="flex-1 mr-4">
+                      <h3 className="text-base font-semibold text-foreground">
                         {item.service}
                       </h3>
                     </div>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+                    <div className="flex flex-row items-center gap-3 sm:gap-6 shrink-0">
                       <div className="flex items-center gap-2 text-lg font-bold">
                         <div className="w-8 h-8 bg-gradient-to-br from-turquoise to-turquoise-dark rounded-lg flex items-center justify-center">
                           <Banknote className="h-4 w-4 text-white" />
