@@ -52,7 +52,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-turquoise/20 to-gold/20 rounded-2xl transform rotate-2 scale-105" />
                 <div className="relative bg-white rounded-2xl p-2 shadow-elegant">
                   <img
-                    src="/lovable-uploads/ade02222-d1e8-4e35-ba40-96789a206263.png"
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/ade02222-d1e8-4e35-ba40-96789a206263.png`}
                     alt="Анжела Крицкая в офисе"
                     className="w-full h-auto rounded-xl object-cover"
                   />

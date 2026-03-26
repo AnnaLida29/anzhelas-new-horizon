@@ -52,7 +52,7 @@ const Hero = () => {
             {/* Main photo */}
             <div className="relative bg-white rounded-3xl p-2 shadow-elegant">
               <img
-                src="/lovable-uploads/ac6e08e6-191e-4c9b-ab00-b79b7325fd54.png"
+                src={`${import.meta.env.BASE_URL}lovable-uploads/ac6e08e6-191e-4c9b-ab00-b79b7325fd54.png`}
                 alt="Анжела Крицкая - главный бухгалтер, инвестор, исследователь нейросетей"
                 className="w-full h-auto rounded-2xl object-cover"
               />

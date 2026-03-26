@@ -17,7 +17,7 @@ const Plans = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-turquoise/20 rounded-2xl transform -rotate-2 scale-105" />
                 <div className="relative bg-white rounded-2xl p-2 shadow-elegant">
-                  <img src="/lovable-uploads/f8dc052f-82e9-4bfc-8c91-690dc079e098.png" alt="Анжела Крицкая за работой" className="w-full h-auto rounded-xl object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}lovable-uploads/f8dc052f-82e9-4bfc-8c91-690dc079e098.png`} alt="Анжела Крицкая за работой" className="w-full h-auto rounded-xl object-cover" />
                 </div>
               </div>
             </div>
