@@ -63,16 +63,15 @@ const Plans = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Освоить AI-инструменты</span>
-                      <span className="text-xs text-turquoise font-medium">2025
-                    </span>
+                      <span className="text-xs text-turquoise font-medium">2026</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Создать первые AI-проекты</span>
-                      <span className="text-xs text-gold font-medium">2025</span>
+                      <span className="text-xs text-gold font-medium">2026</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Достичь финансовой свободы</span>
-                      <span className="text-xs text-turquoise font-medium">2026-2027</span>
+                      <span className="text-xs text-turquoise font-medium">2027-2028</span>
                     </div>
                   </div>
                 </CardContent>
